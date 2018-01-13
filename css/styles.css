@@ -1,3 +1,148 @@
-textarea {
-    resize: none;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto, helvetica, arial, sans-serif;
+}
+/**************************
+Styling the header section
+***************************/
+header {
+    background-image: url(../images/sunset-bg.jpg);
+    background-size: cover;
+    background-repeat: none;
+    padding-bottom: 40px;
+}
+
+#main-logo {
+    width: 40%;
+    padding-top: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+#headline {
+    color: #fff;
+    font-family: 'Source sans pro', 'helvetica neue', helvetica, arial, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(150, 150, 150, 1);
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    background: #3498db;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    color: white;
+}
+
+.btn:hover {
+    background: #3cb0fd;
+    background-image: linear-gradient(to right, #75bfff 0%, #3df5ff 100%);
+    text-decoration: none;
+}
+
+#call-to-action {
+    display: block;
+    margin: 0 auto;
+}
+
+/**************************
+Transpiler styles
+***************************/
+.container {
+    margin: 0 auto;
+    max-width: 90%;
+    text-align: center;
+}
+
+.container h2 {
+    color: rgb(255, 88, 180);
+}
+
+.container p {
+    line-height: 1.5em;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#input-java {
+    border-color: aqua;
+    border-style: solid;
+}
+
+#output-js {
+    border-color: crimson;
+    border-style: solid;
+}
+
+.java {
+    background-color: darkgoldenrod;
+    margin: 10px 0;
+}
+
+.javascript {
+    background-color: darkgoldenrod;
+    margin: 10px 0;
+}
+
+
+/**************************
+Styling the footer section
+***************************/
+
+footer {
+    background-color: #141414;
+    color: antiquewhite;
+}
+
+footer p {
+    padding-top: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+footer ul li a {
+    color: white;
+}
+
+.ig-icon :hover {
+    color: rgb(94, 55, 48);
+}
+
+.fb-icon :hover {
+    color: rgb(25, 41, 255);
+}
+
+.git-icon :hover {
+    color: purple;
+}
+
+.plus-icon :hover {
+    color: red;
+}
+
+.tweet-icon :hover {
+    color: aqua;
+}
+
+/**************************
+Media Queries
+***************************/
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
 }
