@@ -15,8 +15,8 @@
  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Source+Sans+Pro:300,400" rel="stylesheet"> 
-    <link rel='icon' href='favicon.ico' type='image/x-icon'>    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Source+Sans+Pro:300,400" rel="stylesheet">
+    <link rel='icon' href='favicon.ico' type='image/x-icon'>
     <link rel="stylesheet" href="css/styles.css">
     <!-- External Clipboard JS -->
 </head>
@@ -26,7 +26,9 @@
         <!-- top section of page goes here. Add the bg image via css -->
         <!-- Logo -->
 
-        <a href="#"><img src="images/scripty_logo.png" alt="scripty logo" id="main-logo"></a>
+        <a href="#">
+            <img src="images/scripty_logo.png" alt="scripty logo" id="main-logo">
+        </a>
         <!-- Headline + CTA button -->
         <h1 id="headline">"The Ultimate Java to JS Transpiler"</h1>
         <button class="btn btn-lrg" id="call-to-action">Get started</button>
@@ -34,18 +36,21 @@
 
     <main>
         <div class="container">
-            <h2 id="function" >Scripty Transpiler</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat dolorem itaque excepturi adipisci suscipit totam dolore quaerat minima voluptatum recusandae!</p>
+            <h2 id="function">Scripty Transpiler</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat dolorem itaque excepturi adipisci suscipit
+                totam dolore quaerat minima voluptatum recusandae!</p>
 
 
 
             <!-- the transpiler will go here -->
             <textarea name="input" id="input-java" cols="30" rows="10"></textarea>
-            <input type="button" class="btn" value="transpile">
+
+            <input type="button" class="btn java" value="transpile">
             <!-- The middle spinner goes here -->
             <!-- <i class="fa fa-spinner" aria-hidden="true"></i> -->
             <textarea name="input" id="output-js" cols="30" rows="10"></textarea>
-            <button class="btn" id="copy-button" data-clipboard-target="#output-js">copy</button>
+            
+            <button class="btn javascript" id="copy-button" data-clipboard-target="#output-js">copy</button>
         </div>
 
     </main>
@@ -77,9 +82,9 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.min.js"></script>
 
     <script>
-        (function(){
-    new Clipboard('#copy-button');
-})();
+        (function () {
+            new Clipboard('#copy-button');
+        })();
     </script>
 </body>
 

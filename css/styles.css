@@ -51,5 +51,20 @@ header {
 }
 
 #input-java {
-    
+    border-color: aqua;
+    border-style: solid;
+}
+#output-js {
+    border-color: crimson;
+    border-style: solid;
+}
+
+.java {
+    background-color: darkgoldenrod;
+    margin: 10px 0;
+}
+
+.javascript {
+    background-color: darkgoldenrod;
+    margin: 10px 0;
 }
