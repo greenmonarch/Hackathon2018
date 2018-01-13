@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- External Clipboard JS -->
 </head>
 
 <body>
@@ -36,7 +37,7 @@
             <!-- The middle spinner goes here -->
             <!-- <i class="fa fa-spinner" aria-hidden="true"></i> -->
             <textarea name="input" id="output-js" cols="30" rows="10"></textarea>
-            <input type="button" value="copy">
+            <button class="button" id="copy-button" data-clipboard-target="#output-js">copy</button>
         </div>
 
     </main>
@@ -48,18 +49,30 @@
         </p>
         <ul>
             <li>
-                <a href="https://www.facebook.com"><i class="fa fa-facebook-official"></i></a>
+                <a href="https://www.facebook.com">
+                    <i class="fa fa-facebook-official"></i>
+                </a>
             </li>
             <li>
-                <a href="https://www.instagram.com"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com">
+                    <i class="fa fa-twitter"></i>
+                </a>
             </li>
             <li>
-                <a href="https://www.github.com"><i class="fa fa-github"></i></a>
+                <a href="https://www.github.com">
+                    <i class="fa fa-github"></i>
+                </a>
             </li>
         </ul>
     </footer>
-<!-- External Clipboard JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.min.js"></script>
+
+    <script>
+        (function(){
+    new Clipboard('#copy-button');
+})();
+    </script>
 </body>
 
 </html>
