@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     font-family: roboto, helvetica, arial, sans-serif;
 }
@@ -27,6 +31,7 @@ header {
 
 .btn {
     border: none;
+    border-radius: 5px;
     padding: 10px 25px;
 }
 #call-to-action {
@@ -67,4 +72,31 @@ header {
 .javascript {
     background-color: darkgoldenrod;
     margin: 10px 0;
+}
+
+/**************************
+Styling the footer section
+***************************/
+footer {
+    background-color: #141414;
+    color: antiquewhite;
+}
+
+footer p {
+    padding-top: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+footer ul li a {
+    color: white;
 }
