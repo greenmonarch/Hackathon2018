@@ -18,3 +18,11 @@ header {
     text-align: center;
     text-shadow: 1px 1px 3px rgba(150, 150, 150, 1);
 }
+
+.btn {
+    border: none;
+    padding: 10px 25px;
+    
+}
+
+.container
