@@ -2,6 +2,7 @@ header {
     background-image: url(../images/sunset-bg.jpg);
     background-size: cover;
     background-repeat: none;
+    padding-bottom: 40px;
 }
 
 #main-logo {
@@ -22,7 +23,12 @@ header {
 .btn {
     border: none;
     padding: 10px 25px;
-    
+}
+#call-to-action {
+    display: block;
+    margin: 0 auto;
 }
 
-.container
+.container {
+    margin: 0 auto;
+}
