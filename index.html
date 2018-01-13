@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,30 +14,65 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- External Clipboard JS -->
 </head>
+
 <body>
     <header>
         <!-- top section of page goes here. Add the bg image via css -->
         <!-- Logo -->
-        <a href="#"><img src="#" alt="scripty logo"></a>
+        <a href="#">
+            <img src="#" alt="scripty logo">
+        </a>
         <!-- Headline + CTA button -->
-        <h1>"The Ultimate Java to JS Transpiler"</h1>
-        <button>Get started</button>
+        <h1 id="headline">"The Ultimate Java to JS Transpiler"</h1>
+        <button class="btn btn-lrg" id="call-to-action">Get started</button>
     </header>
 
     <main>
-        <!-- the transpiler will go here -->
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <div class="container">
+            <!-- the transpiler will go here -->
+            <textarea name="input" id="input-java" cols="30" rows="10"></textarea>
+            <input type="button" value="transpile">
+            <!-- The middle spinner goes here -->
+            <!-- <i class="fa fa-spinner" aria-hidden="true"></i> -->
+            <textarea name="input" id="output-js" cols="30" rows="10"></textarea>
+            <button class="button" id="copy-button" data-clipboard-target="#output-js">copy</button>
+        </div>
+
     </main>
 
     <footer>
         <!-- Copyright information and social media icons -->
-        <p>&copy; 2018 Scripty Transpiler <i>all rights reserved</i></p>
+        <p>&copy; 2018 Scripty Transpiler
+            <i>all rights reserved</i>
+        </p>
         <ul>
-            <li><a href="https://www.facebook.com"></a></li>
-            <li><a href="https://www.instagram.com"></a></li>        
-            <li><a href="https://www.github.com"></a></li>
+            <li>
+                <a href="https://www.facebook.com">
+                    <i class="fa fa-facebook-official"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.github.com">
+                    <i class="fa fa-github"></i>
+                </a>
+            </li>
         </ul>
     </footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.min.js"></script>
+
+    <script>
+        (function(){
+    new Clipboard('#copy-button');
+})();
+    </script>
 </body>
+
 </html>
