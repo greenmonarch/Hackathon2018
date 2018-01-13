@@ -1,12 +1,13 @@
-*{
+* {
     box-sizing: border-box;
 }
 
 body {
     font-family: roboto, helvetica, arial, sans-serif;
 }
-
-
+/**************************
+Styling the header section
+***************************/
 header {
     background-image: url(../images/sunset-bg.jpg);
     background-size: cover;
@@ -18,7 +19,7 @@ header {
     width: 40%;
     padding-top: 20px;
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 #headline {
@@ -33,12 +34,25 @@ header {
     border: none;
     border-radius: 5px;
     padding: 10px 25px;
+    background: #3498db;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    color: white;
 }
+
+.btn:hover {
+    background: #3cb0fd;
+    background-image: linear-gradient(to right, #75bfff 0%, #3df5ff 100%);
+    text-decoration: none;
+}
+
 #call-to-action {
     display: block;
     margin: 0 auto;
 }
 
+/**************************
+Transpiler styles
+***************************/
 .container {
     margin: 0 auto;
     max-width: 90%;
@@ -59,6 +73,7 @@ header {
     border-color: aqua;
     border-style: solid;
 }
+
 #output-js {
     border-color: crimson;
     border-style: solid;
@@ -74,9 +89,11 @@ header {
     margin: 10px 0;
 }
 
+
 /**************************
 Styling the footer section
 ***************************/
+
 footer {
     background-color: #141414;
     color: antiquewhite;
@@ -99,4 +116,33 @@ footer ul li {
 
 footer ul li a {
     color: white;
+}
+
+.ig-icon :hover {
+    color: rgb(94, 55, 48);
+}
+
+.fb-icon :hover {
+    color: rgb(25, 41, 255);
+}
+
+.git-icon :hover {
+    color: purple;
+}
+
+.plus-icon :hover {
+    color: red;
+}
+
+.tweet-icon :hover {
+    color: aqua;
+}
+
+/**************************
+Media Queries
+***************************/
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
 }
