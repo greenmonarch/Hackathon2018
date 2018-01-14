@@ -1,33 +1,34 @@
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 
 body {
     font-family: roboto, helvetica, arial, sans-serif;
-    background-image: url(../images/dark-bg.png);
 }
 /**************************
 Styling the header section
 ***************************/
 header {
     background-image: url(../images/header-img.jpg);
-    background-size: cover;
-    background-repeat: none;
+    background-size: auto;
     padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #main-logo {
-    /* width: 60%;
-    padding-top: 20px;
+    width: 40%;
+    padding-top: 40px;
     display: block;
-    margin: 0 auto; */
-    display: none;
+    margin: 0 auto;
+    /* display: none; */
 }
 
 #headline {
     color: #fff;
-    font-family: 'Source sans pro', 'helvetica neue', helvetica, arial, sans-serif;
-    font-weight: 300;
+    font-family: 'Oswald', 'helvetica neue', helvetica, arial, sans-serif;
+    font-weight: 700;
+    font-size: 48px;
     text-align: center;
     text-shadow: 1px 1px 3px rgba(150, 150, 150, 1);
 }
@@ -36,15 +37,12 @@ header {
     border: none;
     border-radius: 5px;
     padding: 10px 25px;
-    background: #3498db;
-    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    background-image: linear-gradient(to right, #FF8008 0%, #FF8008 100%);
     color: white;
 }
 
 .btn:hover {
-    background: #3cb0fd;
-    background-image: linear-gradient(to right, #75bfff 0%, #3df5ff 100%);
-    text-decoration: none;
+    background-position: right center;
 }
 
 #call-to-action {
@@ -57,7 +55,7 @@ Transpiler styles
 ***************************/
 .container {
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 100%;
     text-align: center;
 }
 
@@ -117,7 +115,7 @@ footer ul li {
 }
 
 footer ul li a {
-    color: white;
+    color: rgb(158, 158, 158);
 }
 
 .ig-icon :hover {
@@ -143,14 +141,11 @@ footer ul li a {
 /**************************
 Media Queries
 ***************************/
-@media only screen and (min-width: 450px) {
-    body {
-        background-color: lightblue;
-    }
+@media only screen and (min-width: 320px){
 
 
     #input-java, #output-js {
-        width: 50%;
+        width: 90%;
     }
     .java {
         display: block;
@@ -169,4 +164,42 @@ Media Queries
         background-color: rgb(240, 240, 240);
         color: #9b9b9b;
     }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    /* #input-java, #output-js {
+        display: inline-block;
+        width: 40%;
+    } */
+#input-div {
+    width: 45%;
+    display: inline-block;
+}
+
+#output-div {
+    width: 45%;
+    display: inline-block;
+}
+    /* .java {
+        display: inline-block;
+    }
+    .javascript {
+        display: inline;
+        margin: 0 auto;
+    } */
+}
+
+/**************************
+Styling the footer section
+***************************/
+footer ul {
+    display: inline-block
+}
+footer p {
+    display: inline-block
 }
