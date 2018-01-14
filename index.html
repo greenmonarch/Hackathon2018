@@ -2,100 +2,120 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <!-- stylesheets
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- stylesheets
     1. Normalize css for consistent look among browsers
     2. FontAwesome for social media icons
-    3. Favicon
-    4. Local stylesheet
+    3. Google fonts
+    4. Favicon
+    5. Local stylesheet
 
  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Source+Sans+Pro:300,400" rel="stylesheet">
-    <link rel='icon' href='favicon.ico' type='image/x-icon'>
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- External Clipboard JS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Source+Sans+Pro:300,400" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700|Roboto:300" rel="stylesheet">
+  <link rel='icon' href='favicon.ico' type='image/x-icon'>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- External Clipboard JS -->
 </head>
 
 <body>
-    <header>
-        <!-- top section of page goes here. Add the bg image via css -->
-        <!-- Logo -->
+  <header>
+    <!-- top section of page goes here. Add the bg image via css -->
+    <!-- Logo -->
 
-        <a href="#">
+    <a href="#">
             <img src="images/scripty_logo.png" alt="scripty logo" id="main-logo">
         </a>
-        <!-- Headline + CTA button -->
-        <h1 id="headline">"The Ultimate Java to JS Transpiler"</h1>
-        <button class="btn" id="call-to-action">Get started</button>
-    </header>
+    <!-- Headline + CTA button -->
+    <h1 id="headline">"The Ultimate Java to JS Transpiler"</h1>
+    <button class="btn" id="call-to-action">Get started</button>
+  </header>
 
-    <main>
-        <div class="container">
-            <h2 id="function">Scripty Transpiler</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat dolorem itaque excepturi adipisci suscipit
-                totam dolore quaerat minima voluptatum recusandae!</p>
+  <!-- container -->
+  <div class="container">
+    <!-- h2 and description of tool goes here -->
+    <h2 id="function">Scripty Transpiler</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat dolorem itaque excepturi adipisci suscipit totam dolore quaerat minima voluptatum recusandae!</p>
+    <!-- Input all your Java code here -->
+    <div id="input-div" <!-- the transpiler will go here -->
+      <textarea id="input-java" cols="30" rows="10"></textarea>
+      <!-- Had to use a break tag here to put the buttons on the next line -->
+      <br>
+      <input type="button" class="btn java" value="transpile">
+    </div>
+    <!-- All outputed JS code will show up here -->
+    <div id="output-div">
+      <textarea id="output-js" cols="30" rows="10"></textarea>
+      <br>
+      <button class="btn javascript" id="copy-button" data-clipboard-target="#output-js">copy</button>
+    </div>
+  </div>
 
-
-
-            <!-- the transpiler will go here -->
-            <textarea name="input" id="input-java" cols="30" rows="10"></textarea>
-
-            <input type="button" class="btn java" value="transpile">
-            <!-- The middle spinner goes here -->
-            <!-- <i class="fa fa-spinner" aria-hidden="true"></i> -->
-            <textarea name="input" id="output-js" cols="30" rows="10"></textarea>
-
-            <button class="btn javascript" id="copy-button" data-clipboard-target="#output-js">copy</button>
-        </div>
-
-    </main>
-
-    <footer>
-        <!-- Copyright information and social media icons -->
-        <p>&copy; 2018 Scripty Transpiler
-            <i>all rights reserved</i>
-        </p>
-        <ul>
-            <li>
-                <a href="https://www.facebook.com" class="fb-icon">
+  <footer>
+    <!-- Copyright information and social media icons -->
+    <div class="container-footer">
+      <p>&copy; 2018 Scripty Transpiler
+      </p>
+      <!-- Placeholder tabs that lead to FAQs, terms, privacy etc. -->
+      <ul id="footer-tabs">
+        <li>
+          <a href="#">Language <i class="fa fa-sort-desc"></i></a>
+        </li>
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+        <li>
+          <a href="#">Terms</a>
+        </li>
+        <li>
+          <a href="#">Privacy</a>
+        </li>
+        <li>
+          <a href="#">About Us</a>
+        </li>
+        <li>
+          <a href="#">API</a>
+        </li>
+      </ul>
+      <!-- Social media icons. Float them to the right -->
+      <ul>
+        <li>
+          <a href="https://www.facebook.com" class="fb-icon">
                     <i class="fa fa-facebook-official"></i>
                 </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com" class="ig-icon">
+        </li>
+        <li>
+          <a href="https://www.instagram.com" class="ig-icon">
                     <i class="fa fa-instagram"></i>
                 </a>
-            </li>
-            <li>
-                <a href="https://www.github.com" class="git-icon">
+        </li>
+        <li>
+          <a href="https://www.github.com" class="git-icon">
                     <i class="fa fa-github"></i>
                 </a>
-            </li>
-            <li>
-                <a href="https://www.plus.google.com" class="plus-icon">
-                    <i class="fa fa-google-plus"></i>
-                </a>
-            </li>
-            <li>
-                    <a href="https://www.twitter.com" class="tweet-icon">
+        </li>
+        <li>
+          <a href="https://www.twitter.com" class="tweet-icon">
                         <i class="fa fa-twitter"></i>
                     </a>
-                </li>
-        </ul>
-    </footer>
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.min.js"></script>
-
-    <script>
-        (function () {
-            new Clipboard('#copy-button');
-        })();
-    </script>
+        </li>
+      </ul>
+    </div>
+  </footer>
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- DO NOT REMOVE. THIS IS REQUIRED FOR MAKING THE COPY TO CLIPBOARD WORK!! SHOUTOUT TO JUERY FOR THIS AWESOME TOOL -->
+  <script>
+  $("button").click(function(){
+      $("textarea").select();
+      document.execCommand('copy');
+  });
+  </script>
 </body>
 
 </html>
