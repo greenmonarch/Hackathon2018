@@ -4,12 +4,13 @@
 
 body {
     font-family: roboto, helvetica, arial, sans-serif;
+    background-image: url(../images/dark-bg.png);
 }
 /**************************
 Styling the header section
 ***************************/
 header {
-    background-image: url(../images/sunset-bg.jpg);
+    background-image: url(../images/header-img.jpg);
     background-size: cover;
     background-repeat: none;
     padding-bottom: 40px;
