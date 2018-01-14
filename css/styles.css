@@ -30,7 +30,7 @@ header {
     font-weight: 700;
     font-size: 48px;
     text-align: center;
-    text-shadow: 1px 1px 3px rgba(150, 150, 150, 1);
+    text-shadow: 1px 1px 3px rgb(68, 68, 68);
 }
 
 .btn {
@@ -168,10 +168,17 @@ Media Queries
 
 @media only screen and (min-width: 768px) {
 
-    .container {
-        max-width: 960px;
+    #main-logo {
+        width: 20%;
+        padding-top: 40px;
+        display: block;
         margin: 0 auto;
+        /* display: none; */
     }
+    /* .container {
+        max-width: 100%;
+        margin: 0 auto;
+    } */
     /* #input-java, #output-js {
         display: inline-block;
         width: 40%;
