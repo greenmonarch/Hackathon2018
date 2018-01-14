@@ -16,10 +16,11 @@ header {
 }
 
 #main-logo {
-    width: 40%;
+    /* width: 60%;
     padding-top: 20px;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto; */
+    display: none;
 }
 
 #headline {
@@ -65,7 +66,7 @@ Transpiler styles
 
 .container p {
     line-height: 1.5em;
-    font-size: 14px;
+    font-size: 0.875em;
     font-weight: 300;
 }
 
@@ -141,8 +142,30 @@ footer ul li a {
 /**************************
 Media Queries
 ***************************/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 450px) {
     body {
         background-color: lightblue;
+    }
+
+
+    #input-java, #output-js {
+        width: 50%;
+    }
+    .java {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .javascript {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        background-color: rgb(240, 240, 240);
+        color: #9b9b9b;
     }
 }
