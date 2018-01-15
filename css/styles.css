@@ -221,7 +221,11 @@ Media Queries
     ***************************/
   footer {
     background-color: rgb(240, 240, 240);
-    color: #9b9b9b;
+    color: #6d6d6d;
+  }
+
+  .container-footer a, .container-footer li {
+    color: #6d6d6d;
   }
   .container-footer {
     margin: 0 auto;
@@ -302,6 +306,10 @@ Styling the footer section
   footer p {
     display: block;
   }
+  .container-footer a, .container-footer li {
+    color: #fff;
+  }
+
   #footer-tabs {
     font-size: 14px;
     display: inline-block;
