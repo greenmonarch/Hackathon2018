@@ -1,209 +1,312 @@
-
 body {
-    font-family: roboto, helvetica, arial, sans-serif;
+  font-family: 'roboto', helvetica, arial, sans-serif;
 }
+
+
 /**************************
 Styling the header section
 ***************************/
+
 header {
-    background-image: url(../images/header-img.jpg);
-    background-size: auto;
-    padding-bottom: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
+
+/* Background animated gradient */
+
+header {
+  background: linear-gradient(58deg, #4facfe, #00f2fe);
+  background-size: 400% 400%;
+  
+  -webkit-animation: headergradient 35s ease infinite;
+  -moz-animation: headergradient 35s ease infinite;
+  animation: headergradient 35s ease infinite;}
+  
+  @-webkit-keyframes headergradient {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @-moz-keyframes headergradient {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @keyframes headergradient { 
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+
 #main-logo {
-    width: 40%;
-    padding-top: 40px;
-    display: block;
-    margin: 0 auto;
-    /* display: none; */
+  width: 40%;
+  padding-top: 40px;
+  display: block;
+  margin: 0 auto;
+  /* display: none; */
 }
 
 #headline {
-    color: #fff;
-    font-family: 'Oswald', 'helvetica neue', helvetica, arial, sans-serif;
-    font-weight: 700;
-    font-size: 48px;
-    text-align: center;
-    text-shadow: 1px 1px 3px rgb(68, 68, 68);
+  color: #fff;
+  font-family: 'Roboto', 'helvetica neue', helvetica, arial, sans-serif;
+  font-weight: 700;
+  font-size: 4em;
+  text-align: center;
+  /* text-shadow: 1px 1px 3px rgb(252, 94, 94); */
 }
 
 .btn {
-    border: none;
-    border-radius: 5px;
-    padding: 10px 25px;
-    background-image: linear-gradient(to right, #FF8008 0%, #FF8008 100%);
-    color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+ 
+  border: 2px solid #fff;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .btn:hover {
-    background-position: right center;
+  text-decoration: none;
+
 }
 
 #call-to-action {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
+  padding: 15px 55px;
+  font-size: 20px;
+  background-color: transparent;
+}
+#call-to-action :hover {
+  background-color: transparent;
 }
 
 /**************************
 Transpiler styles
 ***************************/
+
 .container {
-    margin: 0 auto;
-    max-width: 100%;
-    text-align: center;
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
 }
 
-.container h2 {
-    color: rgb(255, 88, 180);
+#function {
+  color: #4facfe;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
 }
 
 .container p {
-    line-height: 1.5em;
-    font-size: 0.875em;
-    font-weight: 300;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 1.5em;
+  font-size: 0.875em;
+  font-weight: 300;
+  margin-bottom: 50px;
 }
 
 #input-java {
-    border-color: aqua;
-    border-style: solid;
+  border: 5px #4facfe solid;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
 }
 
 #output-js {
-    border-color: crimson;
-    border-style: solid;
+  border: 5px #F43A88 solid;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
 }
 
 .java {
-    background-color: darkgoldenrod;
-    margin: 10px 0;
+  background-color: #4facfe;
+  margin: 10px 0;
 }
+/* #java-link:hover {
+  background-color: #4fdbfe;
+} */
 
 .javascript {
-    background-color: darkgoldenrod;
-    margin: 10px 0;
+  background-color: rgb(244, 58, 173);
+  margin: 10px 0;
 }
 
+/* #js-link:hover {
+  background-color: #F43A88;
+} */
 
 /**************************
 Styling the footer section
 ***************************/
 
-footer {
-    background-color: #141414;
-    color: antiquewhite;
+
+footer a {
+  text-decoration: none;
 }
 
 footer p {
-    padding-top: 20px;
-    font-size: 12px;
-    text-align: center;
+  padding-top: 20px;
+  /* font-size: 12px; */
+  text-align: center;
 }
 
 footer ul {
-    list-style: none;
+  list-style: none;
 }
 
 footer ul li {
-    display: inline-block;
-    margin: 20px;
+  display: inline-block;
+  margin: 20px;
 }
 
 footer ul li a {
-    color: rgb(158, 158, 158);
+  color: rgb(158, 158, 158);
 }
 
 .ig-icon :hover {
-    color: rgb(94, 55, 48);
+  color: rgb(94, 55, 48);
 }
 
 .fb-icon :hover {
-    color: rgb(25, 41, 255);
+  color: rgb(25, 41, 255);
 }
 
 .git-icon :hover {
-    color: purple;
+  color: purple;
 }
 
 .plus-icon :hover {
-    color: red;
+  color: red;
 }
 
 .tweet-icon :hover {
-    color: aqua;
+  color: aqua;
 }
+
 
 /**************************
 Media Queries
 ***************************/
-@media only screen and (min-width: 320px){
 
-
-    #input-java, #output-js {
-        width: 90%;
-    }
-    .java {
-        display: block;
-        margin: 0 auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .javascript {
-        display: block;
-        margin: 0 auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    footer {
-        background-color: rgb(240, 240, 240);
-        color: #9b9b9b;
-    }
+@media only screen and (min-width: 320px) {
+  /**************************
+  transpiler styles
+  ***************************/
+  #input-java,
+  #output-js {
+    width: 90%;
+  }
+  .java {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .javascript {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #output-div {
+    margin-bottom: 60px;
+  }
+  /**************************
+    Styling the footer section
+    ***************************/
+  footer {
+    background-color: rgb(240, 240, 240);
+    color: #9b9b9b;
+  }
+  .container-footer {
+    margin: 0 auto;
+  }
+  #footer-tabs {
+    text-align: center;
+  }
+  #social-icons {
+    /* display: block; */
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-
-    #main-logo {
-        width: 20%;
-        padding-top: 40px;
-        display: block;
-        margin: 0 auto;
-        /* display: none; */
-    }
-    /* .container {
-        max-width: 100%;
-        margin: 0 auto;
-    } */
-    /* #input-java, #output-js {
-        display: inline-block;
-        width: 40%;
-    } */
-#input-div {
+  #main-logo {
+    width: 20%;
+    padding-top: 40px;
+    display: block;
+    margin: 0 auto;
+    /* display: none; */
+  }
+  .container p {
+    width: 60%;
+    margin: 0 auto;
+    line-height: 1.9em;
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 50px;
+    color: rgb(78, 78, 78);
+  }
+  #input-div {
     width: 45%;
     display: inline-block;
-}
-
-#output-div {
+  }
+  #output-div {
     width: 45%;
     display: inline-block;
-}
-    /* .java {
-        display: inline-block;
-    }
-    .javascript {
-        display: inline;
-        margin: 0 auto;
-    } */
-}
-
-/**************************
+    margin-bottom: 100px;
+  }
+  /**************************
 Styling the footer section
 ***************************/
-footer ul {
-    display: inline-block
-}
-footer p {
-    display: inline-block
-}
+  footer {
+    background-color: #4facfe;
+    background: linear-gradient(58deg, #4facfe, #00f2fe);
+  background-size: 400% 400%;
+  
+  -webkit-animation: headergradient 50s ease infinite;
+  -moz-animation: headergradient 50s ease infinite;
+  animation: headergradient 50s ease infinite;}
+  
+  @-webkit-keyframes headergradient {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @-moz-keyframes headergradient {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @keyframes headergradient { 
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+
+  }
+  footer ul {
+    display: inline-block;
+  }
+  footer ul li {
+    color: #fff;
+  }
+  footer ul li a {
+    color: #fff;
+  }
+  footer p {
+    display: block;
+  }
+  #footer-tabs {
+    font-size: 14px;
+    display: inline-block;
+    width: 70%;
+  }
+  #social-icons {
+    display: inline-block;
+  }
