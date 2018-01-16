@@ -1,5 +1,6 @@
 body {
   font-family: 'roboto', helvetica, arial, sans-serif;
+  background-color: rgb(247, 247, 247);
 }
 
 
@@ -292,8 +293,6 @@ Styling the footer section
       50%{background-position:100% 50%}
       100%{background-position:0% 50%}
   }
-
-  }
   footer ul {
     display: inline-block;
   }
@@ -317,4 +316,5 @@ Styling the footer section
   }
   #social-icons {
     display: inline-block;
+  }
   }
